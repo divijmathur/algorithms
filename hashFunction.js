@@ -41,6 +41,6 @@ class HashTable {
                 }
             }
         }
-        return valuesArr
+        return valuesArr;
     }
 }

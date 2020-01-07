@@ -57,7 +57,7 @@ class Graph{
         }
         return result;
     }
-    breadthFirst(start){
+    breadthFirstSearch(start){
         const queue = [start];
         const result = [];
         const visited = {};
@@ -66,7 +66,6 @@ class Graph{
         while(queue.length){
             currentVertex= queue.shift();
             result.push(currentVertex);
-
             this.adjacencyList[currentVertex].forEach(neighbor => {
                 if(!visited[neighbor]){
                     visited[neighbor]=true;
